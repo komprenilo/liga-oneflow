@@ -1,0 +1,15 @@
+python_requirement(
+    name="requirements",
+    requirements=[
+        "jupyterlab",
+        "flowvision==0.2.1",
+        "oneflow==0.8.0",
+    ],
+    resolve="flowvision",
+)
+
+python_sources(
+    name="lab",
+    sources=["lab.py"],
+    resolve="flowvision",
+)
